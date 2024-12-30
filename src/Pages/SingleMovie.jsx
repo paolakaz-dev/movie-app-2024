@@ -31,7 +31,7 @@ export default function SingleMovie() {
      
 
     async function getMovie() {
-        const res = await fetch(`http://www.omdbapi.com/?apikey=97656b20&s&i=${params.id}`)
+        const res = await fetch(`https://www.omdbapi.com/?apikey=97656b20&s&i=${params.id}`)
         const data = await res.json();
         console.log(data)
         if (data.Response === "False") {
