@@ -21,6 +21,8 @@ import { useState, useEffect } from "react";
 import { useCartContext } from "../useContext/context"
 import Ratings from "../Ratings";
 import "../index.css"
+import { Link } from "react-router-dom";
+
 
 export default function SingleMovie() {
 
@@ -65,7 +67,7 @@ return movie ? (
         <div className="movie-info">
             
             <div className="movie-info-title">
-            <a href="/#">← Back to Homepage</a>
+            <Link to="/">← Back to Homepage</Link>
 
                 <h1>{movie.Title}</h1>
                 <p>{movie.Plot}</p>
