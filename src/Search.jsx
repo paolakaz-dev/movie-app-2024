@@ -5,14 +5,14 @@ import { useCartContext } from "./useContext/context"
 //  API KEY = 5996b0f2
 // http://www.omdbapi.com/?apikey=5996b0f2&s=whatever
 
-async function doFetch() {
-    // wait for the http response
-    const res = await fetch("http://www.omdbapi.com/?apikey=5996b0f2&s=asdfasdfasdfqwerqwerqw")
-    // wait for the data to finish streaming
-    // const data = await res.text()
-    const data = await res.json()
-    console.log("DATA:", data)
-}
+// async function doFetch() {
+//     // wait for the http response
+//     const res = await fetch("https://www.omdbapi.com/?apikey=5996b0f2&s=asdfasdfasdfqwerqwerqw")
+//     // wait for the data to finish streaming
+//     // const data = await res.text()
+//     const data = await res.json()
+//     console.log("DATA:", data)
+// }
 
 // doFetch()
 
@@ -31,7 +31,7 @@ export default function Search() {
     
     async function searchFunction() {
 
-        const res = await fetch(`http://www.omdbapi.com/?apikey=97656b20&s=${inputRef.current.value}&type=${selectRef.current.value}`);
+        const res = await fetch(`https://www.omdbapi.com/?apikey=97656b20&s=${inputRef.current.value}&type=${selectRef.current.value}`);
         const data = await res.json()
 
 
