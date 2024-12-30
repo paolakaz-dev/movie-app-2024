@@ -16,12 +16,11 @@
         }, [])
 */
 
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams, useNavigate, Link} from "react-router-dom"
 import { useState, useEffect } from "react";
 import { useCartContext } from "../useContext/context"
 import Ratings from "../Ratings";
 import "../index.css"
-import { Link } from "react-router-dom";
 
 
 export default function SingleMovie() {
