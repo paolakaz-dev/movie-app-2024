@@ -16,6 +16,7 @@
 */
 
 import { useCartContext } from "../useContext/context"
+import { Link } from "react-router-dom";
 import "../index.css"
 
 export default function Cart(){
@@ -31,7 +32,7 @@ export default function Cart(){
     return (
         <div id="cart-page">
             <div className="cart-listings">
-            <a href="/#">← Back to Homepage</a>
+            <Link to="/">← Back to Homepage</Link>
 
             <h1>Cart</h1>
 
